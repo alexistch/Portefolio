@@ -379,3 +379,30 @@ header{
     scroll-margin-top: 250px; /* Ajuste la valeur en fonction du nombre de pixels souhaités */
 }
 
+.neon-trail {
+    position: absolute;
+    pointer-events: none; /* Ne pas interférer avec le curseur */
+    width: 30px; /* Largeur de la traînée */
+    height: 30px; /* Hauteur de la traînée */
+    background: rgba(0, 240, 255, 0.7); /* Couleur néon avec opacité */
+    border-radius: 50%; /* Pour que la traînée soit ronde au début */
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.8), 0 0 30px rgba(0, 240, 255, 0.6), 0 0 40px rgba(0, 240, 255, 0.4); /* Ombre pour l'effet néon */
+    transform: translate(-50%, -50%); /* Centrer le point de la traînée */
+    opacity: 0; /* Initialement invisible */
+    pointer-events: none; /* Ne pas interférer avec les clics */
+    transition: opacity 0.5s linear, transform 0.5s linear; /* Transition pour l'opacité et la taille */
+}
+
+/* Animation pour diminuer l'opacité et la taille */
+/* Animation pour diminuer l'opacité et augmenter la taille */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(2); /* Agrandir légèrement à la fin de l'animation */
+    }
+
+}
