@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Mon portefolio</title>
+        <link rel="stylesheet" href="Styles/styles.css" type="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+
+    <body>
+        
+        <header>
+            <div class="boxed">
+                <div class="flex aligncenter space-between">
+                    <button onclick="openMenu()" class="header-menu-mobile">
+                        <span class="material-icons">menu</span>
+                    </button>
+                    <a href="https://www.linkedin.com/in/alexis-tchoulev-b46a5a261/" class="header-logo">
+                        <img src="IMG/lnkdn.png">
+                    </a>
+                    <ul class="header-menu">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#APROPOS">A propos</a></li>
+                        <li><a href="#COMPETENCES">Compétences</a></li>
+                        <li><a href="#PROJETS">Projets</a></li>
+                        <li><a href="IMG/CV_CYBER_ALEXIS_TCHOULEV_04.2024 (1).pdf">CV</a></li>
+                        <li><a href="#CONTACT">Contact</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </header>
+        
+        <div class="slider">
+            ><img src="IMG/bck.jpg" class="slider-bck">
+            <div class="slider-content">
+                <h1>Alexis TCHOULEV</h1>
+                <p>Je suis developpeur Full stack</p>
+            </div>
+            
+        </div>
+
+        <div class="section APROPOS" id="APROPOS">
+            <div class="boxed">
+                <div class="flex toColumn mCenter">
+                    <div class="w40 wm100">
+                        <h2>A propos de moi</h2>
+                    </div>
+                    <div class="w60 wm100">
+                        <p>Je m'appelle Alexis TCHOULEV, j'ai 21 ans et je suis actuellement élève en Bachelor 3 à l'EFREI.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section dark" id="COMPETENCES">
+            <div class="boxed text-center">
+                <h2>Découvrez mes compétences</h2>
+                <div class="flex toColumn gap20">
+                    <div class="w25 wm100 skill">
+                        <img src="IMG/html.png" >
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="w25 wm100 skill">
+                        <img src="IMG/css-3.png" >
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="w25 wm100 skill">
+                        <img src="IMG/js.png" >
+                        <h3>JS</h3>
+                    </div>
+                    <div class="w25 wm100 skill">
+                        <img src="IMG/c.png" >
+                        <h3>C++</h3>
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+        <div class="section fond-projets" id="PROJETS">
+            <div class="boxed text-center">
+                <div>
+                    <h2 class="padding-top">Mes projets</h2>
+                    <div class="flex wrap gap20 space-between margin-bottom">
+                        <div class="w32 wm47 projets">
+                            <a href="https://www.vinted.fr/member/34521937">
+                                <img src="IMG/Design-2.png">
+                                <h3>Projet de test</h3>
+                            </a>
+                        </div>
+                        <div class="w32 wm47 projets">
+                            <a href="#">
+                                <img src="IMG/morskie-oko-tatry.jpg">
+                                <h3>Projet de test</h3>
+                            </a>
+                        </div>
+                        <div class="w32 wm47 projets">
+                            <a href="#">
+                                <img src="IMG/morskie-oko-tatry.jpg">
+                                <h3>Projet de test</h3>
+                            </a>
+                        </div>
+                        <div class="w32 wm47 projets">
+                            <a href="#">
+                                <img src="IMG/morskie-oko-tatry.jpg">
+                                <h3>Projet de test</h3>
+                            </a>
+                        </div>
+                        <div class="w32 wm47 projets">
+                            <a href="#">
+                                <img src="IMG/morskie-oko-tatry.jpg">
+                                <h3>Projet de test</h3>
+                            </a>
+                        </div>
+                        <div class="w32 wm47 projets">
+                            <a href="#">
+                                <img src="IMG/morskie-oko-tatry.jpg">
+                                <h3>Projet de test</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+        <div class="section darkcontact" id="CONTACT">
+            <div class="boxed text-center">
+                <h2>Contactez-moi</h2>
+                <div class="flex toColumn space-between mgap20">
+                    <div class="w32 wm100 contact">
+                        <span class="material-icons icon">mail</span>
+                        <span class="label">E-mail</span>
+                        <span class="value">alexis.tchoulev@portefolio.fr</span>
+                    </div>
+                    <div class="w32 wm100 contact">
+                        <span class="material-icons icon">call</span>
+                        <span class="label">call</span>
+                        <span class="value">07 XX XX XX XX</span>
+                    </div>
+                    <div class="w32 wm100 contact">
+                        <span class="material-icons icon">pin_drop</span>
+                        <span class="label">Adresse</span>
+                        <span class="value">2 rue du test, Poissy, 78300</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>        
+ 
+    </body>
+
+    <script src="JS/app.js"></script>
+</html>
